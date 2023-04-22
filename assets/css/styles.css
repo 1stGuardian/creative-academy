@@ -1,0 +1,196 @@
+:root {
+  --pr-color: #048853;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #ebfdf6;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.pr-color {
+  color: var(--pr-color);
+}
+
+* {
+  z-index: 2;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 5;
+  transition: 0.3s ease-in;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(160deg, var(--pr-color), rgba(0, 0, 0, 0.75));
+  height: 100vh;
+}
+
+.accent-img,
+.hero-img {
+  z-index: 1;
+}
+
+/* Layanan Section */
+.card-layanan {
+  width: 100%;
+  height: 313px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in;
+}
+
+.card-layanan h3 {
+  color: var(--pr-color);
+  transition: 0.3s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--pr-color);
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+
+.card-layanan:hover {
+  /* background: linear-gradient(160deg, var(--pr-color), rgba(0, 0, 0, 0.75)); */
+  background-color: #235f46;
+  color: white;
+}
+
+.card-layanan:hover h3 {
+  color: white;
+}
+
+.card-layanan:hover .circle-icon {
+  background-color: white;
+}
+
+/* Search Section */
+#search {
+  background-image: url(../img/bgsearch.png);
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tab-content .input-group {
+  height: 88px;
+}
+
+.tab-content .input-group:focus {
+  border: none;
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: black;
+  opacity: 60%;
+  background-color: white;
+  border-radius: 0;
+  border: none;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: var(--pr-color);
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+li.nav-item:first-child .nav-link {
+  border-top-left-radius: 7px;
+}
+
+li.nav-item:last-child .nav-link {
+  border-top-right-radius: 7px;
+}
+
+input.form-control::placeholder {
+  color: var(--pr-color);
+}
+
+.search-input {
+  min-width: 200px !important;
+}
+
+/* Rekomendasi Section */
+/* .card {
+  width: 375px;
+} */
+
+.card,
+.card-body,
+.card-facility {
+  transition: 0.5s ease-in;
+}
+
+.card:hover {
+  background-color: #276e51;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .card-body {
+  color: white;
+}
+
+.card:hover .card-body a {
+  font-weight: 600;
+}
+
+.card:hover .card-facility {
+  background-color: #fff;
+}
+
+/* Fitur Section */
+.card-fitur .overlay {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.card-fitur .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 1;
+}
+
+/* Contact Section */
+#contact {
+  background-image: url(../img/bgcontact.png);
+}
+
+.container-fluid.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Footer */
+footer .container-fluid {
+  height: 270px;
+}
+
+.copyright {
+  bottom: 2.5%;
+}
+
+footer a.active {
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+@media screen and (max-width: 992px) {
+  .container .hero-img {
+    width: 70vw;
+    height: auto !important;
+  }
+
+  .p-search {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .hero-img {
+    width: 75vw;
+    height: auto !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-input {
+    min-width: 300px !important;
+  }
+}
